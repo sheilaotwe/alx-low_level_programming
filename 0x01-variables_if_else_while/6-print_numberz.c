@@ -3,7 +3,7 @@
 /**
  * main - Print all single digit number only using putchar
  * 
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 {
 	int digit;
