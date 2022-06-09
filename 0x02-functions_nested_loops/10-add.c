@@ -9,7 +9,7 @@
  * Return: summ of integers
  */
 
-int add (int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
