@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Print combinations of tow different digits in ascending order separated by comma followed by a space
+ * main - Print combination of numbers of two numbers
  *
  * Return: Always 0
  */
