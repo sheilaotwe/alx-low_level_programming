@@ -11,12 +11,12 @@ int main(void)
 
 	for (i = 0; i < 49; i++)
 	{
-		printf("%1d, ", a);
+		printf("%ld, ", a);
 		sum = a + b;
 		a = b;
 		b = sum;
 		if (i == 48)
-			printf("%1d\n", a);
+			printf("%ld\n", a);
 	}
 	return (0);
 }
