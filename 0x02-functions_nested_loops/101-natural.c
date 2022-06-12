@@ -10,7 +10,7 @@ int main(void)
 
 	for (b = 0; b < a; b++)
 	{
-		if ((b % 3 == 0) || (b % 5 ==0))
+		if ((b % 3 == 0) || (b % 5 == 0))
 		{
 			sum = sum + b;
 		}
