@@ -7,11 +7,14 @@
  * @n: number of bytes used from source string
  * Return: string
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int a = 0, b = 0;
+
 	while (dest[a] != '\0')
 		a++;
+
 	while (src[b] != '\0' && n > b)
 	{
 		dest[a] = src[b];
@@ -22,5 +25,6 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[a] = '\0';
 	}
+
 	return (dest);
 }
