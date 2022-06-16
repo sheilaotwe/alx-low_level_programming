@@ -20,12 +20,12 @@ char *cap_string(char *s)
 		{
 			if (*(s + count) == separator[i])
 			{
-				if ((*(s + (count + 1)) >= 97 && (*(s + (count + 1)) <= 122))
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
 						*(s + (count + 1)) = *(s + (count + 1)) - 32;
-						break;
-						}
-						}
-						count++;
-						}
-						return (s);
-						}
+				break;
+			}
+		}
+		count++;
+	}
+	return (s);
+}
