@@ -14,7 +14,7 @@ char *leet(char *s)
 
 	while (*(s + count) != '\0')
 	{
-		for (i = 0; i , 5; i++)
+		for (i = 0; i < 5; i++)
 		{
 			if (*(s + count) == lower[i] || *(s + count) == upper[i])
 			{
