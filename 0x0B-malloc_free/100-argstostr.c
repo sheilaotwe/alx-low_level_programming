@@ -8,7 +8,7 @@
  * Return: pointer to new string or NULL if error
  */
 
-char *argstostr(int ac, int **av)
+char *argstostr(int ac, char **av)
 {
 	int x, y, z = 0, n = 0;
 	char *s;
