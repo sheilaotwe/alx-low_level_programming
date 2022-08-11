@@ -1,10 +1,9 @@
 #include "alx.h"
 
 /**
- * read_textfile - Function that reads a text file and prints it to the POSIX
- * standard output
+ * read_textfile - Function that reads a text file and prints it to standard output
  * @filename: file descripter
- * @letter: count
+ * @letters: count
  * Return: anytime size_t
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -24,6 +23,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	oz = write(STDOUT_FILENO, buf, sz);
 	if (oz == -1)
 		return (0);
-	closs(fd);
+	close(fd);
 	return (oz);
 }
