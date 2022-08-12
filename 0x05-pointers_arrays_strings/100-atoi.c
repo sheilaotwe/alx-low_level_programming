@@ -2,25 +2,34 @@
 
 /**
  * _atoi - convert string to integer
- * @s: string to use
- * Return: integer
+ * @s: string
+ * Return: 0 (success)
  */
 int _atoi(char *s)
 {
-	int sign = 1, i = 0;
-	unsigned int res = 0;
+	int i;
+	int z, p;
 
-	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	z = 0;
+	p = -1;
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '-')
-			sign *= -1;
-		i++;
+			p *= -1;
+
+		if (s[i] > 47 && s[i] < 58)
+		{
+			if (z < 0)
+				z = (z * 10) - (s[i] - '0');
+			else
+				z = (s[i] - '0') * -1;
+
+			if (s[i + 1] < 48 || s[i + 1] > 57)
+				break;
+		}
 	}
-	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '0'))
-	{
-		res = (res * 10) + (s[i] - '0');
-		i++;
-	}
-	res *= sign;
-	return (res);
+	if (p < 0)
+		z *= -1;
+
+	return (z);
 }
